@@ -67,7 +67,7 @@ public class Tietovarasto {
             return lisayslause.executeUpdate() > 0;
         } catch (SQLException ex) {
             // Jos tuli virhe, niin hypätään tänne
-            System.out.println("Virhettä Pukkaa");
+            System.out.println("Virhe");
             ex.printStackTrace();
 
             return false;
@@ -106,7 +106,7 @@ public class Tietovarasto {
             return lisayslause.executeUpdate() > 0;
         } catch (Exception ex) {
             // Jos tuli virhe, niin hypätään tänne
-            System.out.println("Virhettä Pukkaa");
+            System.out.println("Virhe");
             ex.getMessage();
 
             ex.printStackTrace();
@@ -198,7 +198,7 @@ public class Tietovarasto {
 
             }
         } catch (SQLException e) {
-            System.out.println("Virhettä pukkaa!" + e.getMessage());
+            System.out.println("Virhe!" + e.getMessage());
             return null;
         } finally {
             // Suljetaan yhteydet
@@ -248,7 +248,7 @@ public class Tietovarasto {
 
             }
         } catch (SQLException e) {
-            System.out.println("Virhettä pukkaa!" + e.getMessage());
+            System.out.println("Virhe!" + e.getMessage());
             return null;
         } finally {
             // Suljetaan yhteydet
@@ -326,7 +326,7 @@ public class Tietovarasto {
             }
 
         } catch (SQLException e) {
-            System.out.println("Virhettä pukkaa!" + e.getMessage());
+            System.out.println("Virhe!" + e.getMessage());
 
         } finally {
             // Suljetaan yhteydet
@@ -366,7 +366,7 @@ public class Tietovarasto {
             Aloite aloite = new Aloite(aloiteID, aloitenimi, aloitekuvaus, pvm, kayttajaID);
             return aloite;
         } catch (SQLException e) {
-            System.out.println("Virhettä pukkaa!" + e.getMessage());
+            System.out.println("Virhe!" + e.getMessage());
             return null;
         } finally {
             // Suljetaan yhteydet
@@ -422,7 +422,7 @@ public class Tietovarasto {
             }
 
         } catch (SQLException e) {
-            System.out.println("Virhettä pukkaa!" + e.getMessage());
+            System.out.println("Virhe!" + e.getMessage());
 
         } finally {
             // Suljetaan yhteydet
